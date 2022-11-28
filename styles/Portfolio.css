@@ -1,0 +1,27 @@
+section ul{
+    list-style-type: square;
+    padding-top: 15px;
+    padding-bottom:50px;
+    padding-left:80px;
+    position: relative;
+    float:right;
+    margin-right: 400px;
+    margin-top:150px;
+    margin-left:200px;
+}
+aside img{
+    border-radius: 100%;
+    padding-right:20px;
+    position: relative;
+    float:left;
+}
+#arrow ul li{
+    font-size: 30px;
+    line-height: 50px;
+}
+ul>a:hover{
+    color:darkblue;
+    font-style: normal;
+    font-weight: normal;
+
+}

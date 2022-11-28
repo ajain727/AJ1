@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aditya Jain </title>
+    <link rel="stylesheet" href ="styles/main.css">
+    <link rel="stylesheet" href="styles/SlideShow.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $ ( '#nav_menu'). slicknav( {prependTo: "#mobile_menu"});
+        }); </script>
+
+</head>
+<body>
+    <nav id = "menu">
+        <ul>
+            <li><a href="index.html">Aditya Jain</a></li>
+            <li><a href="pages/About.html">About</a></li>
+            <li><a href="pages/Portfolio.html">Portfolio</a>
+                <ul>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Experience</a></li>
+                </ul>
+            </li>
+            <li><a href="pages/Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <nav>
+            <aside>
+                <h1> Aditya Jain</h1>
+                <p>CS Student | Artist</p>
+            </aside>
+                <!--Slideshowcode-->
+                <section class="slideshow-container">
+                    <div class="slideshow">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 17</div>
+                            <img src="Images/Element_of_art-magzine.jpg" style="width:30%">
+                            
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 17</div>
+                            <img src="Images/LipsTypo.png" style="width:30%">
+                           
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 17</div>
+                            <img src="Images/Raven.png" style="width:30%">
+                            
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 17</div>
+                            <img src="Images/Robin.png" style="width:30%">
+                           
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">5 / 17</div>
+                            <img src="Images/Triangle%20triger%20final%202.png" style="width:30%">
+                            
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">6 / 17</div>
+                            <img src="Images/ColorPaletteIcons.png" style="width:30%">
+                            
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">7 / 17</div>
+                            <img src="Images/dr.strange%20card.jpg" style="width:30%">
+                            
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">8 / 17</div>
+                            <img src="Images/ContinuationSquare.jpg" style="width:30%">
+                            
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">9 / 17</div>
+                            <img src="Images/FigureGround.jpg" style="width:30%">
+                            
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">10 / 17</div>
+                            <img src="Images/Proximitysquare.jpg" style="width:30%">
+                            
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">11 / 17</div>
+                            <img src="Images/Black%20panther.png" style="width:30%">
+                            
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">12 / 17</div>
+                            <img src="Images/Similarity.jpg" style="width:30%">
+                            
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">13 / 17</div>
+                            <img src="Images/MonochromaticProtrait%202.0.png" style="width:30%">
+                            
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">14 / 17</div>
+                            <img src="Images/ManInJar.jpeg" style="width:30%">
+                            
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">15 / 17</div>
+                            <img src="Images/Girl.JPG" style="width:30%">
+                            
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">16 / 17</div>
+                            <img src="Images/Heart.JPG" style="width:30%">
+                            
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">17 / 17</div>
+                            <img src="Images/ManUnderTree.png" style="width:30%">
+                            
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                </section>
+        </nav>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+
+            }
+        </script>
+    </main>
+    <footer>
+        <p>&copy; 2022, Aditya Jain</p>
+        <p>Term of Service Link</p>
+        <p>Privacy Statement Link</p>
+    </footer>
+</body>
+</html>

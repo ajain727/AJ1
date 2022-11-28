@@ -1,0 +1,117 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+:root{
+    --global-color-1: #FFEEE0;
+}
+html{
+
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    text-align: center;
+    /*width: 800px;*/
+    margin:0 auto;
+    background-color: var(--global-color-1);
+
+}
+/*------------menu starts here------------*/
+a:hover,a:focus{
+    font-style: italic;
+    font-weight: bold;
+    color:cornflowerblue;
+}
+
+a{
+    color:blue;
+}
+
+#menu{
+    width:100%;
+    /*overflow: auto;*/
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    /*width: 100%;*/
+    /*width:960px;*/
+}
+#menu ul li {
+    float: left;
+    display:block;
+    width: 25%;
+}
+#menu ul li a {
+    display:block;
+    width: auto;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none ;
+    background-color: #1D1D1F;
+    opacity: 95%;
+    color: white;
+    font-weight: bold;
+}
+#menu a.current {
+    color: yellow;
+}
+#menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width:100%;
+}
+#menu ul ul li {
+    float: none;
+}
+#menu ul li:hover > ul {
+    display: block;
+}
+#menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+/*---------end here-------------*/
+}
+aside{
+    top:50%;
+    width:250px;
+    float:left;
+    font-size: 45px;
+    padding: 60px 10px;
+    margin-left:250px;
+}
+aside h1{
+    font-weight: bold;
+}
+
+footer{
+    padding: .3em;
+    border-top: 2.25px solid grey;
+    /*background-color: black ;*/
+    clear:both;
+    position: absolute;
+    float: bottom;
+    background-color: white;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+
+footer p{
+    text-align: center;
+    position:relative;
+    color:black;
+    padding: 1em 5em;
+    font-weight: normal;
+    display: inline-block;
+}
+
