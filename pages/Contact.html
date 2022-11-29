@@ -5,11 +5,16 @@
     <title> Aditya Jain </title>
     <!--<link rel="stylesheet" href ="../styles/main.css">-->
     <link rel="stylesheet" href = "../styles/Contact.css">
-    <link rel="images" href ="#">
-    <link rel="images" href ="#">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="/js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $ ( '#nav_menu'). slicknav( {prependTo: "#mobile_menu"});
+        }); </script>
 </head>
 <body>
-    <nav id = "menu">
+    <nav id = "nav_menu">
         <ul>
             <li><a href="/AJ1/index.html">Aditya Jain</a></li>
             <li><a href="About.html">About</a></li>

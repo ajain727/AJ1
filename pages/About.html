@@ -5,11 +5,16 @@
     <title> Aditya Jain </title>
     <link rel="stylesheet" href ="../styles/main.css">
     <link rel="stylesheet" href ="../styles/about.css">
-    <link rel="images" href ="#">
-    <link rel="images" href ="#">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="/js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $ ( '#nav_menu'). slicknav( {prependTo: "#mobile_menu"});
+        }); </script>
 </head>
 <body>
-    <nav id = "menu">
+    <nav id = "nav_menu">
         <ul>
             <li><a href="/AJ1/index.html">Aditya Jain</a></li>
             <li><a href="About.html">About</a></li>
@@ -25,11 +30,15 @@
     </nav>
     <h1>About Me</h1>
     <aside>
-        <img href="#" alt="My Photo">
+        <img src="/Images/headshot.jpeg" alt="Aditya Jain's Photo" style="width:300px;">
         <br>
-        <div id="reason">
-            <h4>Why I should be hired</h4>
-            <p>----------------------</p>
+        <div class="reason">
+            <h4 id="reason_heading">Why I should be hired?</h4>
+            <br>
+            <p>I am a student who is passionate about art and coding. Being passionate about coding, I also have experience in web development. Following my interest, I have done an internship at Essex County Prosecutor's Office, where I did multiple workshops, learned about some of the ethical considerations of computers and the internet, how to design programs with human use in mind, and learned about the software that is used in the office protocols and investigation. But not only being a good coder makes me eligible for a job. In the past few years, I have done a few volunteering services where I learned teamwork and how to interact with people. Being a good team person and good communicator, I am also a multi-tasker. I worked as a cashier at Stop and Shop for 6 months. I assisted more than 60 customers with checkout and product queries.  I also helped "Pick and Delivery" to boost their satisfaction rate by 4%.
+                In my free time, I like to capture the world on my sketchbook and then on my laptop by Abode Suite. I had experience with adobe suite, you might have seen a couple of examples of my work on the home page, if not click HERE to have a look.
+                And always keep learning about new coding methods and languages.
+            </p>
         </div>
         <br>
     </aside>

@@ -20,7 +20,7 @@ body{
     background-color: var(--global-color-1);
 
 }
-/*------------menu starts here------------*/
+/*------------nav_menu starts here------------*/
 a:hover,a:focus{
     font-style: italic;
     font-weight: bold;
@@ -31,12 +31,12 @@ a{
     color:blue;
 }
 
-#menu{
+#nav_menu{
     width:100%;
     /*overflow: auto;*/
 }
 
-#menu ul {
+#nav_menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -44,12 +44,12 @@ a{
     /*width: 100%;*/
     /*width:960px;*/
 }
-#menu ul li {
+#nav_menu ul li {
     float: left;
     display:block;
     width: 25%;
 }
-#menu ul li a {
+#nav_menu ul li a {
     display:block;
     width: auto;
     text-align: center;
@@ -60,22 +60,22 @@ a{
     color: white;
     font-weight: bold;
 }
-#menu a.current {
+#nav_menu a.current {
     color: yellow;
 }
-#menu ul ul {
+#nav_menu ul ul {
     display: none;
     position: absolute;
     top: 100%;
     width:100%;
 }
-#menu ul ul li {
+#nav_menu ul ul li {
     float: none;
 }
-#menu ul li:hover > ul {
+#nav_menu ul li:hover > ul {
     display: block;
 }
-#menu > ul::after {
+#nav_menu > ul::after {
     content: "";
     clear: both;
     display: block;
@@ -98,7 +98,7 @@ footer{
     border-top: 2.25px solid grey;
     /*background-color: black ;*/
     clear:both;
-    position: absolute;
+    position: fixed;
     float: bottom;
     background-color: white;
     bottom:0;
