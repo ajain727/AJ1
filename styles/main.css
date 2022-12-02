@@ -5,6 +5,7 @@
 
 :root{
     --global-color-1: #FFEEE0;
+    --global-color-2:#1D1D1F;
 }
 html{
 
@@ -55,7 +56,7 @@ a{
     text-align: center;
     padding: 1em 0;
     text-decoration: none ;
-    background-color: #1D1D1F;
+    background-color: var(--global-color-2);
     opacity: 95%;
     color: white;
     font-weight: bold;
@@ -114,4 +115,28 @@ footer p{
     font-weight: normal;
     display: inline-block;
 }
+@media only screen and (max-width: 959px){
 
+}
+
+@media only screen and (max-width: 769px){
+    #nav_menu{
+        display: none;
+    }
+    #mobile_menu{
+        display:block;
+
+    }
+    aside{
+        float:none;
+        width:95%;
+        text-align: center;
+        padding-left:2.5%;
+        padding-right:2.5%;
+
+    }
+    .slicknav_menu{
+        background-color: var(--global-color-2) !important;
+        display: block !important;
+    }
+}

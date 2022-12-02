@@ -2,12 +2,12 @@ section ul{
     list-style-type: square;
     padding-top: 15px;
     padding-bottom:50px;
-    padding-left:80px;
+    padding-left:-80px;
     position: relative;
     float:right;
-    margin-right: 400px;
+    /*margin-right: 400px;*/
     margin-top:150px;
-    margin-left:200px;
+    margin-left:-100px;
 }
 aside img{
     border-radius: 100%;
